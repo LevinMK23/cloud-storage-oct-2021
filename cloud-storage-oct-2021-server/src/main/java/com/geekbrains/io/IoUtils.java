@@ -6,12 +6,13 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class IoUtils {
 
     public static void main(String[] args) throws Exception {
 
-        Path root = Path.of("root");
+        Path root = Paths.get("root");
         if (!Files.exists(root)) {
             Files.createDirectory(root);
         }

@@ -15,7 +15,7 @@ import static java.nio.file.StandardWatchEventKinds.ENTRY_MODIFY;
 
 public class NioUtils {
     public static void main(String[] args) throws IOException {
-        Path path = Path.of("root");
+        Path path = Paths.get("root");
         // 1/2/.. -> 1
 //        System.out.println(path.getParent());
 //        if (path.getParent() != null) {

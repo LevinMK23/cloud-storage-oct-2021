@@ -4,17 +4,13 @@ import java.io.Serializable;
 
 public class AbstractMessage implements Serializable {
 
-    private String message;
+    private CommandType type;
 
-    public AbstractMessage(String message) {
-        this.message = message;
+    protected void setType(CommandType type) {
+        this.type = type;
     }
 
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
+    public CommandType getType() {
+        return type;
     }
 }

@@ -2,9 +2,11 @@ package com.geekbrains.model;
 
 import lombok.Builder;
 import lombok.Getter;
+import lombok.ToString;
 
 @Builder
 @Getter
+@ToString
 public class FileMessage extends AbstractMessage {
 
     private static final int BUTCH_SIZE = 8192;

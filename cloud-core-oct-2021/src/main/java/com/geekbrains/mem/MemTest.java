@@ -2,7 +2,15 @@ package com.geekbrains.mem;
 
 public class MemTest {
 
+    static void foo(Foo foo) {
+        foo.foo(1,2);
+    }
+
     public static void main(String[] args) {
+
+        foo(new Foo());
+        foo(new FooProxy());
+
         // meta space
         MemExample.i = 5;
 
